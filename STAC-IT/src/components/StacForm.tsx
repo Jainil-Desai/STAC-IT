@@ -366,7 +366,7 @@ const StacForm: React.FC<StacFormProps> = ({
     const callBackendModel = async (message: string) => {
         try {
             const response = await axios.post(
-                "https://stac-it-backend.onrender.com/chatbot/call-model/",
+                "http://ec2-13-220-23-95.compute-1.amazonaws.com/chatbot/call-model/",
                 new URLSearchParams({ message }),
                 {
                     headers: { "Content-Type": "application/x-www-form-urlencoded" },
